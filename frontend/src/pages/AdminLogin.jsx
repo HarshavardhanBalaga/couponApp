@@ -15,7 +15,7 @@ const AdminLogin = () => {
 
     try {
       const res = await axios.post(
-        '/api/coupons/claim',
+        '/api/admin/login',
         { username, password },
         {
           withCredentials: true,
