@@ -15,7 +15,7 @@ const AdminLogin = () => {
 
     try {
       const res = await axios.post(
-        'https://coupon-app-api.vercel.app/api/admin/login',
+        '/api/admin/login',
         { username, password },
         {
           withCredentials: true,
