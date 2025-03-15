@@ -24,7 +24,7 @@ const UserPage = () => {
       }
 
       const res = await axios.post(
-        '/api/coupons/claim',
+        'https://coupon-app-api.vercel.app/api/coupons/claim',
         {},
         {
           withCredentials: true,
