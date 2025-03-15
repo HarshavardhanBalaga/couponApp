@@ -25,7 +25,8 @@ A full-stack MERN (MongoDB, Express, React, Node.js) application that distribute
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB Atlas
 - **Authentication**: Cookie-based session auth
-- **Deployment**: Render (or any full-stack compatible host)
+- **Deployment**: Render
+- **Live URL**: https://couponapp-g867.onrender.com
 
 ---
 
