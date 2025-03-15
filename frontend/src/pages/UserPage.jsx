@@ -24,7 +24,7 @@ const UserPage = () => {
       }
 
       const res = await axios.post(
-        'http://localhost:5000/api/coupons/claim',
+        '/api/coupons/claim',
         {},
         {
           withCredentials: true,
