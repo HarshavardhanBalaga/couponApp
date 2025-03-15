@@ -11,7 +11,7 @@ const AdminDashboard = () => {
 
   const fetchCoupons = async () => {
     try {
-      const res = await axios.get('https://coupon-app-api.vercel.app/api/admin/coupons', {
+      const res = await axios.get('/api/admin/coupons', {
         withCredentials: true,
       });
       setCoupons(res.data);
@@ -23,7 +23,7 @@ const AdminDashboard = () => {
 
   const fetchClaims = async () => {
     try {
-      const res = await axios.get('https://coupon-app-api.vercel.app/api/admin/claims', {
+      const res = await axios.get('/api/admin/claims', {
         withCredentials: true,
       });
       setClaims(res.data);
@@ -41,7 +41,7 @@ const AdminDashboard = () => {
     if (!newCode) return;
     try {
       await axios.post(
-        'https://coupon-app-api.vercel.app/api/admin/coupons',
+        '/api/admin/coupons',
         { code: newCode },
         { withCredentials: true }
       );
@@ -57,7 +57,7 @@ const AdminDashboard = () => {
   const handleUpdate = async (id) => {
     try {
       await axios.put(
-        `https://coupon-app-api.vercel.app/api/admin/coupons/${id}`,
+        `/api/admin/coupons/${id}`,
         { code: editCode },
         { withCredentials: true }
       );
@@ -74,7 +74,7 @@ const AdminDashboard = () => {
   const handleToggle = async (id) => {
     try {
       await axios.patch(
-        `https://coupon-app-api.vercel.app/api/admin/coupons/${id}/toggle`,
+        `/api/admin/coupons/${id}/toggle`,
         {},
         { withCredentials: true }
       );
